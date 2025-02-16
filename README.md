@@ -51,5 +51,5 @@ Churn Customers = CALCULATE(COUNT('Customer Churn'[churn]), FILTER('Customer Chu
 ```DAX
 Churn Rate % = DIVIDE('Customer Churn Measure'[Churn Customers], [Total Customers], 0)
 ```
-
+---
 These Calculated Column and DAX measures will help generate actionable insights for visualizations, enabling PhoneNow and PwC Switzerland to identify trends and develop strategies for improving customer retention.
