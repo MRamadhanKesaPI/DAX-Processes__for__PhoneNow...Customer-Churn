@@ -3,20 +3,20 @@
 Following the data import, cleaning, and transformation processes in PostgreSQL, the cleaned and transformed data has been successfully connected to Power BI. All data types are correctly formatted. The DAX processes are designed to provide clear insights into customer churn and its drivers. The goal is to identify the factors contributing to churn and to support strategies for improving retention. 
 
 Simple DAX measures are used to answer key questions. These measures include:
-1. **Calculated Columns**: Defined at the row level to classify and compute new fields.
-2. **DAX Measures**: Aggregate data for analysis and visualization.
+1. [Calculated Columns](#calculated-columns) 
+2. [DAX Measures](#dax-measures)
 
 ## Calculated Columns
 These columns categorize or calculate values at the row level before aggregating data:
 
-- **Delivery Type**: Categorizes orders as either Delivery or Pick Up based on order activity.
+- **Tenure Level**: Categorizes customer tenure into specific ranges to analyze customer loyalty.
 ```DAX
-Delivery = IF(order_activity[delivery_1] = "True", "Delivery", "Pick Up")
+Tenure Level = IF('Customer Churn'[tenure] >= 0 && 'Customer Churn'[tenure] <= 12, "0-12 Months", IF('Customer Churn'[tenure] >= 13 && 'Customer Churn'[tenure] <= 24, "13-24 months", IF('Customer Churn'[tenure] >= 25 && 'Customer Churn'[tenure] <= 48, "25-48 Months", IF('Customer Churn'[tenure] > 48, "48+ Months"))))
 ```
 
-- **Stock Remaining**: Calculates the proportion of remaining stock in relation to total inventory.
+- **Age Segment**: Classifies customers into Senior or Youth categories based on their age.
 ```DAX
-Stock Remaining = DIVIDE(inventory_management_2[inventory_balance], inventory_management_2[total_inventory], 0)
+Age Segment = IF('Customer Churn'[seniorcitizen] = "1", "Senior", "Youth")
 ```
 
 ## DAX Measures
