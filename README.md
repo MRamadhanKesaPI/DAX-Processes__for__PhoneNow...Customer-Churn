@@ -1,8 +1,8 @@
 # DAX Processes for PhoneNow: Customer Churn
 
-Cleaned data from PostgreSQL is now connected to Power BI. All numeric and monetary values are correctly formatted. the DAX measures are designed to provide clear insights into customer churn and its drivers. The goal is to identify the factors contributing to churn and to support strategies for improving retention. 
+Following the data import, cleaning, and transformation processes in PostgreSQL, the cleaned and transformed data has been successfully connected to Power BI. All data types are correctly formatted. The DAX processes are designed to provide clear insights into customer churn and its drivers. The goal is to identify the factors contributing to churn and to support strategies for improving retention. 
 
-Simple DAX measures are used to answer key questions without relying on date information. These measures include:
+Simple DAX measures are used to answer key questions. These measures include:
 1. **Calculated Columns**: Defined at the row level to classify and compute new fields.
 2. **DAX Measures**: Aggregate data for analysis and visualization.
 
