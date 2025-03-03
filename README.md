@@ -53,3 +53,6 @@ Churn Rate % = DIVIDE('Customer Churn Measure'[Churn Customers], [Total Customer
 ```
 ---
 These Calculated Column and DAX measures will help generate actionable insights for visualizations, enabling PhoneNow and PwC Switzerland to identify trends and develop strategies for improving customer retention.
+
+| [⏪ Data Preparation on PostgreSQL](https://mramadhankesapi.github.io/Data-Preparation-Processes_for_PhoneNow...Customer-Churn/) | [PhoneNow: Cusomer Churn Analytics ⏩](https://mramadhankesapi.github.io/PhoneNow-Customer-Churn-Analytics/) |
+|----------------------------------|---------------|
