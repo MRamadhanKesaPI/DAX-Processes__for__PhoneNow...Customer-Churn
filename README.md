@@ -60,7 +60,7 @@ These Calculated Column and DAX measures will help generate actionable insights 
       ⏪ <a href="https://mramadhankesapi.github.io/Data-Preparation-Processes_for_PhoneNow...Customer-Churn/" style="text-decoration: none; font-weight: bold; color: #007bff;">Data Preparation on PostgreSQL</a>
     </td>
     <td style="width:50%; padding:10px; text-align: right;">
-      <a href="https://mramadhankesapi.github.io/PhoneNow-Customer-Churn-Analytics/" style="text-decoration: none; font-weight: bold; color: #007bff;">📊 PhoneNow: Customer Churn Analytics</a> ⏩
+      <a href="https://mramadhankesapi.github.io/PhoneNow...Customer-Churn-Analytics/" style="text-decoration: none; font-weight: bold; color: #007bff;">📊 PhoneNow: Customer Churn Analytics</a> ⏩
     </td>
   </tr>
 </table>
